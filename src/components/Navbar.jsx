@@ -44,8 +44,16 @@ const NavbarContact = styled.div`
 		padding: 10px 20px;
 		border: 1px solid white;
 		border-radius: 40px;
+		display: flex;
 		margin-right: 100px;
+		align-items: center;
 		cursor: pointer;
+		box-shadow: 5px 3px white;
+		transition: transform 0.1s;
+
+		&:active {
+			transform: translateY(2px);
+		}
 	}
 `;
 

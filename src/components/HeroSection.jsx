@@ -41,7 +41,7 @@ const HeroButton = styled.button`
 	border-radius: 40px;
 	display: flex;
 	align-items: center;
-	margin-top: 30px;
+	margin-top: 40px;
 	cursor: pointer;
 	box-shadow: 5px 3px white;
 	transition: transform 0.1s;
@@ -64,11 +64,30 @@ const ArrowIcon = styled(ArrowForwardIcon)`
 
 const HeroRight = styled.div`
 	flex: 1;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
+
+const Circle = styled.div`
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border: 70px solid #393939;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	overflow: hidden;
 `;
 
 const HeroImage = styled.img`
-	max-width: 100%;
-	height: auto;
+	max-width: 270px;
+	max-height: 270px;
+	z-index: 2;
+	border-radius: 50%;
 `;
 
 const HeroSection = () => {
@@ -90,6 +109,7 @@ const HeroSection = () => {
 			</HeroLeft>
 			<HeroRight>
 				<HeroImage src={myAvatar} alt='Hero Image' />
+				<Circle />
 			</HeroRight>
 		</HeroSectionWrapper>
 	);
