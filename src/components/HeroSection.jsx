@@ -8,7 +8,9 @@ import node from "../assets/node.png";
 import github from "../assets/github.png";
 import flutter from "../assets/flutter.png";
 import stackoverflow from "../assets/stackoverflow.png";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowForwardIcon from "@mui/icons-material/ArrowRightAltTwoTone";
+
+import CenterText from "../widgets/CenterTextSection.jsx";
 
 const HeroSectionWrapper = styled.div`
 	display: flex;
@@ -203,35 +205,38 @@ const Flutter = styled.img`
 
 const HeroSection = () => {
 	return (
-		<HeroSectionWrapper>
-			<HeroLeft
-				data-aos='fade-right'
-				data-aos-offset='300'
-				data-aos-easing='ease-in-sine'>
-				<HeroText>
-					<h1>
-						Hi!👋 I'm <br /> <StyledName>Rhishikesh C.</StyledName>
-					</h1>
-					<p>Flutter Developer | Web Developer | Backend Developer</p>
-				</HeroText>
-				<HeroButton>
-					Contact Me <ArrowIcon />
-				</HeroButton>
-			</HeroLeft>
-			<HeroRight
-				data-aos='fade-left'
-				data-aos-offset='300'
-				data-aos-easing='ease-in-sine'>
-				<HeroImage src={myAvatar} alt='Hero Image' />
-				<Circle>
-					<Leetcode src={leetcode} alt='leetcode' />
-					<Node src={node} alt='node' />
-					<Github src={github} alt='github' />
-					<Flutter src={flutter} alt='flutter' />
-					<Stackoverflow src={stackoverflow} alt='stackoverflow' />
-				</Circle>
-			</HeroRight>
-		</HeroSectionWrapper>
+		<>
+			<HeroSectionWrapper>
+				<HeroLeft
+					data-aos='fade-right'
+					data-aos-offset='300'
+					data-aos-easing='ease-in-sine'>
+					<HeroText>
+						<h1>
+							Hi!👋 I'm <br /> <StyledName>Rhishikesh C.</StyledName>
+						</h1>
+						<p>Flutter Developer | Web Developer | Backend Developer</p>
+					</HeroText>
+					<HeroButton>
+						Contact Me <ArrowIcon />
+					</HeroButton>
+				</HeroLeft>
+				<HeroRight
+					data-aos='fade-left'
+					data-aos-offset='300'
+					data-aos-easing='ease-in-sine'>
+					<HeroImage src={myAvatar} alt='Hero Image' />
+					<Circle>
+						<Leetcode src={leetcode} alt='leetcode' />
+						<Node src={node} alt='node' />
+						<Github src={github} alt='github' />
+						<Flutter src={flutter} alt='flutter' />
+						<Stackoverflow src={stackoverflow} alt='stackoverflow' />
+					</Circle>
+				</HeroRight>
+			</HeroSectionWrapper>
+			<CenterText />
+		</>
 	);
 };
 

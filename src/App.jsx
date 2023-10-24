@@ -53,8 +53,8 @@ class App extends Component {
 			<>
 				<Navbar />
 				<HeroSection />
-				{/* <About />
-				<Skills />
+				<About />
+				{/* <Skills />
 				<Experience />
 				<Portfolio />
 				<Contact /> */}
