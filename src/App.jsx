@@ -37,6 +37,7 @@ import {
 	Skills,
 	Contact,
 	Experience,
+	Footer,
 } from "./components/index.jsx";
 
 class App extends Component {
@@ -54,10 +55,11 @@ class App extends Component {
 				<Navbar />
 				<HeroSection />
 				<About />
-				{/* <Skills />
+				<Skills />
 				<Experience />
-				<Portfolio />
+				{/* <Portfolio />
 				<Contact /> */}
+				<Footer />
 			</>
 		);
 	}

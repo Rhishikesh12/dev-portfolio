@@ -5,8 +5,9 @@ import styled from "styled-components";
 import myAvatar from "../assets/avatar.png";
 import leetcode from "../assets/leetcode.png";
 import node from "../assets/node.png";
-import github from "../assets/github.png";
+
 import flutter from "../assets/flutter.png";
+import github from "../assets/github.png";
 import stackoverflow from "../assets/stackoverflow.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowRightAltTwoTone";
 

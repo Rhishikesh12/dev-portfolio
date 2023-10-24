@@ -1,0 +1,54 @@
+{
+	"Dart": {
+		"name": "Dart",
+		"imageUrl": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/dart-programming-language-icon.png"
+	},
+	"Javascript": {
+		"name": "Javascript",
+		"imageUrl": "https://www.computerhope.com/jargon/j/javascript.png"
+	},
+	"Java": {
+		"name": "Java",
+		"imageUrl": "https://www.svgrepo.com/show/184143/java.svg"
+	},
+	"HTML5": {
+		"name": "HTML5",
+		"imageUrl": "https://cdn-icons-png.flaticon.com/512/174/174854.png"
+	},
+	"CSS3": {
+		"name": "CSS3",
+		"imageUrl": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+	},
+	"nodejs": {
+		"name": "Node.js",
+		"imageUrl": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+	},
+	"express": {
+		"name": "Express",
+		"imageUrl": "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png"
+	},
+	"mongodb": {
+		"name": "MongoDB",
+		"imageUrl": "https://seeklogo.com/images/M/mongodb-logo-D13D67C930-seeklogo.com.png"
+	},
+	"sql": {
+		"name": "SQL",
+		"imageUrl": "https://pngimg.com/d/mysql_PNG9.png"
+	},
+	"kotlin": {
+		"name": "Kotlin",
+		"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/480px-Kotlin_Icon.svg.png"
+	},
+	"React": {
+		"name": "React",
+		"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"
+	},
+	"Postman": {
+		"name": "Postman",
+		"imageUrl": "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png"
+	},
+	"Figma": {
+		"name": "Figma",
+		"imageUrl": "https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png"
+	}
+}

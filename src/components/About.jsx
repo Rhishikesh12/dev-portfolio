@@ -116,15 +116,15 @@ const About = () => {
 				</p>
 				<DataContainer>
 					<UserData>
-						<h4>Repositories</h4>
+						<h4>Github Repos</h4>
 						<StyledName>{userData.public_repos}</StyledName>
 					</UserData>
 					<UserData>
-						<h4>Followers</h4>
+						<h4>Github Followers</h4>
 						<StyledName>{userData.followers}</StyledName>
 					</UserData>
 					<UserData>
-						<h4>Following</h4>
+						<h4>Github Following</h4>
 						<StyledName>{userData.following}</StyledName>
 					</UserData>
 				</DataContainer>
