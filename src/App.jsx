@@ -34,16 +34,17 @@ import {
 	Navbar,
 	About,
 	Portfolio,
-	Technologies,
+	Skills,
 	Contact,
-} from "./components/index.js";
+	Experience,
+} from "./components/index.jsx";
 
 class App extends Component {
 	componentDidMount() {
 		AOS.init({
-			duration: 1000, // Animation duration in milliseconds
-			easing: "ease-in-out", // Easing function
-			offset: 200, // Offset (in pixels) from the trigger point
+			duration: 1000,
+			easing: "ease-in-out",
+			offset: 200,
 		});
 	}
 
@@ -52,10 +53,11 @@ class App extends Component {
 			<>
 				<Navbar />
 				<HeroSection />
-				<About />
+				{/* <About />
+				<Skills />
+				<Experience />
 				<Portfolio />
-				<Technologies />
-				<Contact />
+				<Contact /> */}
 			</>
 		);
 	}

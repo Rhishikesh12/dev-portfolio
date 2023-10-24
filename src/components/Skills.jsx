@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-const Technologies = () => {
+const Skills = () => {
 	return <div>About</div>;
 };
 
-export default Technologies;
+export default Skills;
