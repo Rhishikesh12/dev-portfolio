@@ -1,33 +1,8 @@
 /* eslint-disable no-unused-vars */
-// /* eslint-disable no-unused-vars */
-// import {
-// 	HeroSection,
-// 	Navbar,
-// 	About,
-// 	Portfolio,
-// 	Technologies,
-// 	Contact,
-// } from "./components/index.js";
-// import AOS from "aos";
-
-// function App() {
-// 	return (
-// 		<>
-// 			<Navbar />
-// 			<HeroSection />
-// 			<About />
-// 			<Portfolio />
-// 			<Technologies />
-// 			<Contact />
-// 		</>
-// 	);
-// }
-
-// export default App;
-
 import React, { Component } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Make sure to import AOS CSS
+import { Link, Element, scroller } from "react-scroll";
 
 import {
 	HeroSection,
@@ -52,14 +27,27 @@ class App extends Component {
 	render() {
 		return (
 			<>
-				<Navbar />
-				<HeroSection />
-				<About />
-				<Skills />
-				<Experience />
-				{/* <Portfolio />
-				<Contact /> */}
-				<Footer />
+				return (
+				<div>
+					<Navbar />
+					<Element name='home'>
+						<HeroSection />
+					</Element>
+					<Element name='about'>
+						<About />
+					</Element>
+					<Element name='skills'>
+						<Skills />
+					</Element>
+					<Element name='experience'>
+						<Experience />
+					</Element>
+					<Element name='projects'>
+						<Portfolio />
+					</Element>
+					<Footer />
+				</div>
+				);
 			</>
 		);
 	}

@@ -207,7 +207,7 @@ const Flutter = styled.img`
 const HeroSection = () => {
 	return (
 		<>
-			<HeroSectionWrapper>
+			<HeroSectionWrapper id='home'>
 				<HeroLeft
 					data-aos='fade-right'
 					data-aos-offset='300'

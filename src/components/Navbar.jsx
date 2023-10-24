@@ -3,12 +3,12 @@
 import React from "react";
 import styled from "styled-components";
 import myLogo from "../assets/logo.svg";
+import { Link } from "react-scroll";
 
 const NavbarWrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 20px;
 	color: #fff;
 	padding: 10px 20px;
 `;
@@ -33,6 +33,7 @@ const NavbarMenu = styled.div`
 			a {
 				text-decoration: none;
 				color: #fff;
+				cursor: pointer;
 			}
 		}
 	}
@@ -66,16 +67,29 @@ const Navbar = () => {
 			<NavbarMenu>
 				<ul>
 					<li>
-						<a href='#'>Home</a>
+						<Link to='home' spy={true} smooth={true} duration={500}>
+							Home
+						</Link>
 					</li>
 					<li>
-						<a href='#'>About</a>
+						<Link to='about' spy={true} smooth={true} duration={500}>
+							About
+						</Link>
 					</li>
 					<li>
-						<a href='#'>Experience</a>
+						<Link to='skills' spy={true} smooth={true} duration={500}>
+							Skills
+						</Link>
 					</li>
 					<li>
-						<a href='#'>Portfolio</a>
+						<Link to='experience' spy={true} smooth={true} duration={500}>
+							Experience
+						</Link>
+					</li>
+					<li>
+						<Link to='projects' spy={true} smooth={true} duration={500}>
+							Projects
+						</Link>
 					</li>
 				</ul>
 			</NavbarMenu>

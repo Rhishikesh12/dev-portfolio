@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const FooterContainer = styled.div`
 	text-align: center;
-	padding: 20px;
+	// padding: 20px;
 `;
 
 const FooterText = styled.div`

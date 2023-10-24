@@ -30,7 +30,10 @@ const Skills = () => {
 	const centerItems = imageKeys.slice(8); // Remaining items
 
 	return (
-		<div data-aos='fade-up' data-aos-anchor-placement='center-bottom'>
+		<div
+			id='skills'
+			data-aos='fade-up'
+			data-aos-anchor-placement='center-bottom'>
 			<Heading>Technologies I Know</Heading>
 			<ImageContainer>
 				{/* Render the first 8 items at the start */}

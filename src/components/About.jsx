@@ -99,7 +99,7 @@ const About = () => {
 	}, []);
 
 	return (
-		<Wrapper>
+		<Wrapper className='about' id='about'>
 			<UserSection data-aos='fade-up'>
 				<Avatar src={userData.avatar_url} alt='GitHub User Avatar' />
 			</UserSection>
