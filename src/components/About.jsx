@@ -100,17 +100,17 @@ const About = () => {
 
 	return (
 		<Wrapper>
-			<UserSection>
+			<UserSection data-aos='fade-up'>
 				<Avatar src={userData.avatar_url} alt='GitHub User Avatar' />
 			</UserSection>
-			<UserInfo>
+			<UserInfo data-aos='fade-up' data-aos-easing='ease-in-sine'>
 				<h2>About Me:</h2>
 				<p>
 					Hello! I'm Rhishikesh Chaughule and I'm a student of Computer <br />
 					Engineering at <b>Saraswati College of Engineering </b>. I have
 					diverse <br />
-					interests in OpenSource Contribution, <b>Android development</b>, And{" "}
-					<br />
+					interests in <b>OpenSource Contribution</b>,{" "}
+					<b>Android development</b>, And <br />
 					<b>Web Development</b>. I have worked on many projects in <br /> Web
 					Development and Android Development.
 				</p>
