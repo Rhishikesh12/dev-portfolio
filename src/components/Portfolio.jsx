@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 // /* eslint-disable no-unused-vars */
-// import React from "react";
+import React from "react";
 
-// export const Portfolio = () => {
-// 	return <div>About</div>;
-// };
+export const Portfolio = () => {
+	return <div>About</div>;
+};
 
-// export default Portfolio;
+export default Portfolio;
