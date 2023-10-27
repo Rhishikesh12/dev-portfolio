@@ -35,9 +35,9 @@
 		"name": "SQL",
 		"imageUrl": "https://pngimg.com/d/mysql_PNG9.png"
 	},
-	"kotlin": {
-		"name": "Kotlin",
-		"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/480px-Kotlin_Icon.svg.png"
+	"Flutter": {
+		"name": "Flutter",
+		"imageUrl": "https://web-strapi.mrmilu.com/uploads/flutter_logo_470e9f7491.png"
 	},
 	"React": {
 		"name": "React",
