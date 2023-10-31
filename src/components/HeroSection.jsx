@@ -5,7 +5,7 @@ import styled from "styled-components";
 import myAvatar from "../assets/avatar.png";
 import leetcode from "../assets/leetcode.png";
 import node from "../assets/node.png";
-
+import { mobile } from "../responsive";
 import flutter from "../assets/flutter.png";
 import github from "../assets/github.png";
 import stackoverflow from "../assets/stackoverflow.png";
@@ -20,6 +20,7 @@ const HeroSectionWrapper = styled.div`
 	padding: 20px;
 	background-color: #000;
 	overflow: hidden;
+	${mobile({ flexDirection: "column", overflow: "hidden", height: "100vh" })}
 `;
 
 const HeroLeft = styled.div`
@@ -41,6 +42,19 @@ const HeroText = styled.div`
 		font-weight: 300;
 		color: #969696;
 	}
+
+	${mobile({
+		flexDirection: "column",
+		h1: {
+			fontSize: "40px",
+			color: "#fff",
+		},
+
+		p: {
+			fontSize: "20px",
+			color: "#969696",
+		},
+	})}
 `;
 
 const HeroButton = styled.button`
@@ -65,6 +79,9 @@ const StyledName = styled.span`
 	-webkit-text-stroke: 1px #f8f8f8;
 	text-shadow: 0px 1px 4px #23430c;
 	color: #000;
+	${mobile({
+		fontSize: "50px",
+	})}
 `;
 
 const ArrowIcon = styled(ArrowForwardIcon)`
@@ -77,6 +94,10 @@ const HeroRight = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	${mobile({
+		marginTop: "-20%",
+		// display : "none",
+	})}
 `;
 
 const Circle = styled.div`
@@ -89,6 +110,10 @@ const Circle = styled.div`
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
+	${mobile({
+		width: "200px",
+		height: "200px",
+	})}
 `;
 
 const HeroImage = styled.img`
@@ -97,6 +122,11 @@ const HeroImage = styled.img`
 	margin-top: 30px;
 	z-index: 2;
 	border-radius: 50%;
+	${mobile({
+		maxWidth: "210px",
+		maxHeight: "210px",
+		marginTop: "20%",
+	})}
 `;
 
 const Leetcode = styled.img`
@@ -118,6 +148,11 @@ const Leetcode = styled.img`
 			transform: rotate(360deg);
 		}
 	}
+
+	${mobile({
+		top: "-90px",
+		left: "25%",
+	})}
 `;
 
 const Node = styled.img`
@@ -139,6 +174,11 @@ const Node = styled.img`
 			transform: rotate(360deg);
 		}
 	}
+
+	${mobile({
+		top: "200px",
+		left: "-5%",
+	})}
 `;
 
 const Github = styled.img`
@@ -160,6 +200,10 @@ const Github = styled.img`
 			transform: rotate(360deg);
 		}
 	}
+	${mobile({
+		top: "40px",
+		left: "-40%",
+	})}
 `;
 
 const Stackoverflow = styled.img`
@@ -181,6 +225,10 @@ const Stackoverflow = styled.img`
 			transform: rotate(360deg);
 		}
 	}
+	${mobile({
+		top: "190px",
+		left: "80%",
+	})}
 `;
 
 const Flutter = styled.img`

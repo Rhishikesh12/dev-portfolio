@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { Projects } from "./data";
 import { InsertLinkTwoTone as LinkIcon } from "@mui/icons-material";
+import { mobile } from "../responsive";
 
 const Heading = styled.div`
 	text-align: center;
@@ -17,10 +18,22 @@ const PortfolioSection = styled.div`
 	justify-content: center;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	${mobile({
+		flexDirection: "column",
+		margin: "5px",
+		overflow: "hidden",
+	})}
 `;
 
 const PortfolioRow = styled.div`
 	display: flex;
+
+	${mobile({
+		flexDirection: "column",
+		display: "flex",
+		flexWrap: "wrap",
+		justifyContent: "center",
+	})}
 `;
 
 const PortfolioItem = styled.div`
@@ -77,6 +90,15 @@ const PortfolioItem = styled.div`
 	&:hover .overlay {
 		opacity: 1;
 	}
+
+	${mobile({
+		img: {
+			width: "350px",
+			height: "350px",
+			objectFit: "cover",
+			borderRadius: "15px",
+		},
+	})}
 `;
 
 const Portfolio = () => {

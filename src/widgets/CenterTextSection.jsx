@@ -2,6 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import ArrowDownwardIcon from "@mui/icons-material/KeyboardDoubleArrowDownTwoTone";
+import { mobile } from "../responsive";
 
 const CenteredTextWrapper = styled.div`
 	display: flex;
@@ -11,6 +12,10 @@ const CenteredTextWrapper = styled.div`
 	height: 100px;
 	background-color: #000;
 	color: #fff;
+	${mobile({
+		display: "none",
+		// marginTop: "15%",
+	})}
 `;
 
 const CenteredText = styled.div`
