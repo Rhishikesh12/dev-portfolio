@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 import ArrowForwardIcon from "@mui/icons-material/ArrowRightAltTwoTone";
 
 const Wrapper = styled.div`
@@ -11,6 +12,7 @@ const Wrapper = styled.div`
 	justify-content: space-between;
 	padding: 20px;
 	overflow: hidden;
+	${mobile({ flexDirection: "column", overflow: "hidden", padding: "30px" })}
 `;
 
 const UserSection = styled.section`
@@ -36,6 +38,28 @@ const UserInfo = styled.section`
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
+
+	${mobile({
+		textAlign: "left",
+		position: "relative",
+		left: "5%",
+		right: "5%",
+
+		h2: {
+			position: "relative",
+			fontSize: "30px",
+			color: "#fff",
+		},
+
+		p: {
+			position: "relative",
+			fontSize: "12px",
+			fontWeight: "200",
+			color: "#969696",
+			marginTop: "15px",
+			marginBottom: "15px",
+		},
+	})}
 `;
 
 const Avatar = styled.img`
@@ -45,6 +69,14 @@ const Avatar = styled.img`
 	width: 400px;
 	height: 400px;
 	box-shadow: 10px 10px;
+
+	${mobile({
+		width: "300px",
+		height: "300px",
+		position: "relative",
+		left: "1%",
+		right: "1%",
+	})}
 `;
 
 const DataContainer = styled.div`
